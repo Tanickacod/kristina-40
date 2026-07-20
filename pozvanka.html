@@ -530,11 +530,11 @@
         <!-- koniec SVG vetvičky -->
 
         <!-- eyebrow -->
-        <p class="eyebrow">— Pozývame ťa na oslavu —</p>
+        <p class="eyebrow">— Pozývam ťa na oslavu —</p>
 
         <!-- hlavný nadpis -->
         <h1 class="main-title">La Dolce Vita</h1>
-        <p class="subtitle-tag">Amalfi &nbsp;·&nbsp; Estate &nbsp;·&nbsp; MMXXVI</p>
+        <p class="subtitle-tag">Amalfi &nbsp;·&nbsp; Estate &nbsp;·&nbsp; MCMLXXXVI</p>
 
         <!-- meno -->
         <span class="name">Kika</span>
@@ -618,7 +618,7 @@
           <!-- ❹ DRESS CODE TEXT — zmeň tu -->
           <p class="dc-text">
             „La Dolce Vita – letná elegancia<br>
-            v&nbsp;bielej a&nbsp;žltej, talianske vibes vítané&nbsp;🍋<br>
+            v&nbsp;bielej, žltej a&nbsp;modrej, talianske vibes vítané&nbsp;🍋<br>
             <span style="font-size:.88em; color: var(--text-mid);">Slnečné okuliare — súčasť dress codu&nbsp;🕶️</span>"
           </p>
         </div>
@@ -627,7 +627,13 @@
         <div class="rsvp">
           <p class="rsvp-label">✦ &nbsp; RSVP &nbsp; ✦</p>
           <p class="rsvp-body">
-            Prosíme potvrď svoju účasť do <strong>5. septembra&nbsp;2026</strong>
+            Prosíme potvrď svoju účasť do <strong>15. augusta&nbsp;2026</strong>
+          </p>
+          <p class="rsvp-body" style="margin-top:8px; font-style:italic; font-size:clamp(13px,2.8vw,15px); opacity:.85;">
+            Večer patrí dospelým – dožičte si taliansku noc bez detí a vychutnajte si la dolce vita naplno.&nbsp;🍋
+          </p>
+          <p class="rsvp-body" style="margin-top:10px; font-size:clamp(13px,2.8vw,15px);">
+            Zadaj svoje meno a počet osôb do formulára nižšie — po kliknutí sa otvorí email s predvyplnenou správou.
           </p>
 
           <form class="rsvp-form" id="rsvpForm" novalidate>
@@ -640,17 +646,14 @@
               <select id="rsvp-count">
                 <option value="1">Prídem sama / sám</option>
                 <option value="2">Prídem s partnerom / partnerkou</option>
-                <option value="3">Prídem s 2 hosťami</option>
-                <option value="4">Prídem s 3 hosťami</option>
               </select>
             </div>
             <button type="submit" class="rsvp-btn">✦ &nbsp; Potvrdzujem účasť &nbsp; ✦</button>
-            <p class="rsvp-note">Po kliknutí sa otvorí tvoj emailový klient s predvyplnenou správou.</p>
           </form>
 
           <div class="rsvp-success" id="rsvpSuccess">
             <div class="success-icon">🍋</div>
-            <p>Grazie! Tešíme sa na teba.</p>
+            <p>Grazie! Tešim sa na teba.</p>
           </div>
         </div>
 
@@ -675,7 +678,7 @@
           </g>
 
           <!-- malý citrón pravý -->
-          <g transform="translate(132,8)">
+          <g transform="translate(134,8)">
             <path d="M1,10 Q1,2 9,2 Q17,2 17,10 Q17,18 9,19 Q1,18 1,10Z" fill="#ffd93b" opacity=".75"/>
             <path d="M1,10 Q-2,9 -.5,11.5Z" fill="#f2c11e" opacity=".75"/>
             <path d="M17,10 Q20,9 18.5,11.5Z" fill="#f2c11e" opacity=".75"/>
@@ -684,7 +687,7 @@
           <line x1="158" y1="19" x2="220" y2="19" stroke="#e3b23a" stroke-width=".9" stroke-dasharray="3 3"/>
         </svg>
 
-        <p class="footer-note">Con amore &nbsp;·&nbsp; Tešíme sa na teba &nbsp;·&nbsp; 🍋</p>
+        <p class="footer-note">Con amore &nbsp;·&nbsp; Tešim sa na teba &nbsp;·&nbsp; 🍋</p>
 
       </div><!-- /inner -->
     </div><!-- /frame-border -->
@@ -703,7 +706,7 @@
     }
     const subject = encodeURIComponent('RSVP – Oslava Kiky 40 🎉');
     const body    = encodeURIComponent(
-      `Ahoj Kika!\n\nPotvrdzujem svoju účasť na tvojej oslave. 🥂\n\nMeno: ${name}\n${guests}\n\nTešíme sa! 🎊`
+      `Ahoj Kika!\n\nPotvrdzujem svoju účasť na tvojej oslave. 🥂\n\nMeno: ${name}\n${guests}\n\nTešim sa! 🎊`
     );
     window.location.href = `mailto:mihalikova.tatiana@gmail.com?subject=${subject}&body=${body}`;
     document.getElementById('rsvpForm').style.display = 'none';
